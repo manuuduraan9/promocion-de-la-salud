@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención Integral de la Salud</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f6f7;
+        }
+        h1 {
+            color: #2980b9;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #27ae60;
+            border-bottom: 2px solid #27ae60;
+        }
+        h3 {
+            color: #e74c3c;
+        }
+        h4 {
+            color: #8e44ad;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .dropdown-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .card {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .timeline {
+            margin: 20px 0;
+            background-color: #dfe6e9;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .gif {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Atención Integral de la Salud</h1>
+    <p>Explora la importancia de la prevención y el proceso salud-enfermedad con un enfoque interactivo.</p>
+
+    <!-- Introducción interactiva -->
+    <div class="section">
+        <h2>Introducción</h2>
+        <p>La atención integral de la salud abarca la promoción, prevención, restauración y rehabilitación de la salud a lo largo de la vida.</p>
+        <button onclick="toggleContent('intro')">Leer más</button>
+        <div id="intro" class="dropdown-content">
+            <p>La atención debe comenzar desde la gestación, ya que los factores de riesgo pueden actuar desde esa etapa. A lo largo de la vida, la salud de una persona está influenciada por sus hábitos y condiciones ambientales, lo que requiere acciones coordinadas de salud pública.</p>
+            <img src="https://www.example.com/gestacion.jpg" alt="Gestación" class="gif">
+        </div>
+    </div>
+
+    <!-- Funciones de la Salud Pública -->
+    <div class="section">
+        <h2>Funciones de la Salud Pública</h2>
+        <div class="card">
+            <h3>Promoción de la Salud</h3>
+            <button onclick="toggleContent('promocion')">Ver más</button>
+            <div id="promocion" class="dropdown-content">
+                <p>Proporciona a la población herramientas para mejorar su salud. Ejemplo: campañas de alimentación saludable.</p>
+                <img src="https://www.example.com/alimentacion.gif" alt="Promoción de la Salud" class="gif">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Protección de la Salud</h3>
+            <button onclick="toggleContent('proteccion')">Ver más</button>
+            <div id="proteccion" class="dropdown-content">
+                <p>Vigilancia de la calidad del agua, aire y alimentos. Ejemplo: control de la calidad del agua potable.</p>
+                <img src="https://www.example.com/agua.gif" alt="Protección del Agua" class="gif">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Prevención de la Enfermedad</h3>
+            <button onclick="toggleContent('prevencion')">Ver más</button>
+            <div id="prevencion" class="dropdown-content">
+                <p>Prevención primordial, primaria, secundaria y terciaria. Ejemplo: campañas de vacunación y educación sanitaria.</p>
+                <img src="https://www.example.com/vacunacion.gif" alt="Vacunación" class="gif">
+            </div>
+        </div>
+    </div>
+
+    <!-- Historia Natural del Proceso Salud-Enfermedad -->
+    <div class="section">
+        <h2>Historia Natural del Proceso Salud-Enfermedad</h2>
+        <div class="timeline">
+            <h4>Período Prepatogénico</h4>
+            <p>Etapa sin enfermedad visible, pero con factores de riesgo presentes. El objetivo es mantener la salud óptima y evitar enfermedades.</p>
+            <img src="https://www.example.com/salud_optima.gif" alt="Salud Óptima" class="gif">
+            <h4>Período Patogénico</h4>
+            <p>La enfermedad comienza a manifestarse. Aquí entran en juego la prevención secundaria y terciaria para reducir complicaciones.</p>
+            <img src="https://www.example.com/prevencion.gif" alt="Prevención Secundaria" class="gif">
+        </div>
+    </div>
+
+    <!-- Prevención -->
+    <div class="section">
+        <h2>Prevención de Enfermedades</h2>
+        <div class="card">
+            <h3>Prevención Primordial</h3>
+            <p>Evitar patrones de vida que aumenten el riesgo de enfermedad.</p>
+        </div>
+        <div class="card">
+            <h3>Prevención Primaria</h3>
+            <p>Control de factores de riesgo. Ejemplo: vacunación.</p>
+        </div>
+        <div class="card">
+            <h3>Prevención Secundaria</h3>
+            <p>Detección temprana de enfermedades. Ejemplo: exámenes preventivos.</p>
+        </div>
+        <div class="card">
+            <h3>Prevención Terciaria</h3>
+            <p>Reducir complicaciones de enfermedades establecidas. Ejemplo: rehabilitación post-enfermedad.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>
